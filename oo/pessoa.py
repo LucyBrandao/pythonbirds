@@ -21,8 +21,13 @@ class Pessoa:
 class Homem(Pessoa):
     pass
 
+
+class Mutante(Pessoa):
+    olhos = 3
+
+
 if __name__ == '__main__':
-    marcos = Homem(nome='Marcos')
+    marcos = Mutante(nome='Marcos')
     leonardo = Homem(marcos, nome='Leonardo')
     # print(Pessoa.cumprimentar(leonardo))
     # print(id(leonardo))
@@ -37,7 +42,7 @@ if __name__ == '__main__':
     del leonardo.olhos
     print(leonardo.__dict__)
     # print(marcos.__dict__)
-    Pessoa.olhos = 3
+    # Pessoa.olhos = 3
     # print(Pessoa.olhos)
     print(leonardo.olhos)
     # print(marcos.olhos)
@@ -49,3 +54,6 @@ if __name__ == '__main__':
     print((isinstance(pessoa, Homem)))
     print((isinstance(marcos, Pessoa)))
     print((isinstance(marcos, Homem)))
+    print(marcos.olhos)
+    homem = Homem()
+    print(homem.olhos)
