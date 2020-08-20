@@ -13,8 +13,3 @@ class CarroTestCase(TestCase):
         motor = Motor()
         motor.acelerar()
         self.assertEqual(1, motor.velocidade)
-
-
-
-# if __name__ == '__main__':
-#   unittest.main()
