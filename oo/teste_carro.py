@@ -3,7 +3,6 @@ from unittest import TestCase
 from oo.carro import Motor
 
 # python -m unittest discover oo
-
 # sempre começar os métodos de teste com "teste"
 
 
